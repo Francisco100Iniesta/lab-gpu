@@ -1,0 +1,14 @@
+Ejecutamos el scrip de reduction para value = 100000000
+Time taken by reduction operation using a function: 8.74 s ± 2.62 ms per loop (mean ± std. dev. of 2 runs, 1 loop each)
+And the result of the sum of numbers in the range [0, value) is: 49999519.84285549
+
+Time taken by reduction operation using numpy.sum(): 38.2 ms ± 28.5 µs per loop (mean ± std. dev. of 2 runs, 10 loops each)
+Now, the result using numpy.sum(): 49999519.84284987 
+ 
+Time taken by reduction operation using numpy.ndarray.sum(): 38.1 ms ± 20.2 µs per loop (mean ± std. dev. of 2 runs, 10 loops each)
+Now, the result using numpy.ndarray.sum(): 49999519.84284987
+El tiempo de cupy.sum midiendo con la funcion time.time() time es 0.009136676788330078 segundos
+
+Time taken by reduction operation using cupy.sum and %timeit(): 2.98 ms ± 95.4 ns per loop (mean ± std. dev. of 2 runs, 1,000 loops each)
+Now, the result using cupy.sum(): 50001802.01049374 
+ 
